@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Test_Flask</title>
+</head>
+<body>
+
+<!--    <h1>Hello from HTML !</h1>-->
+<!--    {% for user in users %}-->
+<!--        {{ user }}-->
+<!--    {% endfor %}-->
+<!--    <form method="get" action="/">-->
+<!--        <input type="text" name="search">-->
+<!--        <button>поиск</button>-->
+<!--    </form>-->
+<!--    <hr>-->
+    <h3>Задать вопрос</h3>
+    <form method="post" action="/add-question">
+        <input type="text" name="question">
+        <textarea name="main_text"></textarea>
+        <button>Опубликовать</button>
+    </form>
+    <h1>Вопросы</h1>
+    {% for q in questions %}
+    <h2>{{ q }}</h2>
+    {% endfor %}
+</body>
+</html>
+
